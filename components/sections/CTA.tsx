@@ -42,14 +42,14 @@ export default function CTA() {
           Start detecting deepfakes in seconds. No account needed, completely private, and powered by cutting-edge biological signal analysis.
         </p>
         <Link
-          href="#get-started"
-          className="group relative inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-10 py-5 rounded-2xl text-lg font-semibold shadow-2xl shadow-blue-500/30 hover:shadow-cyan-500/40 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
-        >
-          <span className="relative z-10">Start Free Analysis</span>
-          <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
-          {/* Shimmer effect */}
-          <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-        </Link>
+  href="/analyze"
+  className="group relative inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-10 py-5 rounded-2xl text-lg font-semibold shadow-2xl shadow-blue-500/30 hover:shadow-cyan-500/40 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+>
+  <span className="relative z-10">Start Free Analysis</span>
+  <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
+  {/* Shimmer effect */}
+  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+</Link>
       </div>
     </section>
   )

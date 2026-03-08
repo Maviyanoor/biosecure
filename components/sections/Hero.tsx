@@ -84,7 +84,7 @@ export default function Hero() {
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4 mb-10">
+            <div className="flex flex-wrap gap-4 mb-10 justify-center">
               <Link
                 href="/analyze"
                 className="group relative bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-8 py-4 rounded-xl font-semibold shadow-xl shadow-blue-500/30 hover:shadow-2xl hover:shadow-cyan-500/40 hover:-translate-y-1 transition-all duration-300 flex items-center space-x-2 overflow-hidden"
@@ -96,15 +96,7 @@ export default function Hero() {
               </Link>
               <Link
                 href="#demo"
-                className="flex items-center space-x-2 bg-white/5 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 hover:border-white/30 transition-all duration-300"
               >
-                <div className="relative">
-                  <Play className="w-5 h-5" />
-                  <div className="absolute inset-0 animate-ping opacity-30">
-                    <Play className="w-5 h-5" />
-                  </div>
-                </div>
-                <span>Watch Demo</span>
               </Link>
             </div>
 
