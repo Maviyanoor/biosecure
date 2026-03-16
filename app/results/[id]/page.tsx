@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import { Shield, Eye, Activity, Heart, Download, AlertTriangle, CheckCircle, Clock, BarChart3, FileText, Zap } from 'lucide-react';
 import ClientWrapper from '@/components/ui/ClientWrapper';
