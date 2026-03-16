@@ -189,12 +189,7 @@ export default function AnalyzePage() {
                     placeholder="https://example.com/video.mp4"
                     className="flex-1 bg-slate-700/50 border border-slate-600 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
                   />
-                  <button
-                    className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-3 rounded-xl font-medium hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
-                    onClick={handleAnalyze}
-                  >
-                    Analyze URL
-                  </button>
+                  
                 </div>
               </div>
             )}
