@@ -7,7 +7,7 @@
 
 ### What is the Backend?
 
-The backend is the server-side brain of BioSecure. It is a REST API built with Python. The frontend (Next.js) sends requests to this backend, the backend processes them, runs the deepfake detection logic, talks to the database, and sends back results. The user never directly touches the backend — everything goes through API endpoints.
+The backend is the server-side brain of BioSecure. It is a REST API(Respresentational state transfer application programming interface) built with Python. The frontend (Next.js) sends requests to this backend, the backend processes them, runs the deepfake detection logic, talks to the database, and sends back results. The user never directly touches the backend — everything goes through API endpoints.
 
 ---
 
@@ -102,7 +102,7 @@ Creates and configures the Celery instance. Celery handles background jobs — w
 ### Why FastAPI (not Flask or Django)?
 
 FastAPI was chosen for three reasons:
-1. **Speed** — FastAPI is one of the fastest Python frameworks. It uses async/await natively, meaning it can handle many requests at the same time without blocking.
+1. **Speed** — FastAPI is one of the fastest Python frameworks. It uses /await natively, meaning it can handle many requests at the same time without blocking.async
 2. **Automatic docs** — FastAPI auto-generates interactive API documentation at `/docs` using qSwagger UI. This makes testing endpoints easy during development.
 3. **Pydantic validation** — FastAPI is built on Pydantic, so all request and response data is automatically validated and typed. This catches errors early.
 
