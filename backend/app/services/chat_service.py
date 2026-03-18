@@ -4,17 +4,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = OpenAI(
-    api_key=os.getenv("GROQ_API_KEY"),
-    base_url="https://api.groq.com/openai/v1",
-)
-
 SYSTEM_PROMPT = """You are BioSecure AI, an expert deepfake detection assistant.
 Help users understand their analysis results clearly and professionally.
 Never mention Llama, Groq, or OpenAI. You are BioSecure AI only."""
 
 
 def get_chat_response(session_id: str, message: str, detection_results: dict, history: list) -> str:
+    client = OpenAI(
+        api_key=os.getenv("GROQ_API_KEY"),
+        base_url="https://api.groq.com/openai/v1",
+    )
+
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": f"Analysis: {detection_results}"},
